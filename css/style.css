@@ -198,11 +198,15 @@ body {
   margin-top: 10px;
   font-size: 1.8rem;
   padding: 1.2rem 4.6rem;
-}
+} 
 
 #openHours {
   text-align: center;
   padding: 20px;
+}
+.oh-content:hover{
+  transform: scale(105%);
+  cursor: default;
 }
 
 .oh-content {
@@ -214,6 +218,7 @@ body {
   -webkit-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
   -moz-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
   box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+  transition:all 0.3s;
 }
 
 .oh-table tr {
@@ -271,7 +276,89 @@ body {
   position: relative;
   background-size: cover;
   background-position: 50% 50%;
-  background-image: url("https://img.freepik.com/free-photo/golden-cutlery-with-textile-plate-dark-background-top-view_1220-6580.jpg?t=st=1730764759~exp=1730768359~hmac=1caf35666e8722f0b824d4090ac6cce1a8ddb57b60c9efbe8031ff477c7bac67&w=1380");
+  background-image: url("https://img.freepik.com/free-photo/top-view-dining-tables-without-food_23-2150157804.jpg?t=st=1730797158~exp=1730800758~hmac=2dd11d7e1bcb6bbe8c12aee0597ba96a89cfd01d4435ca3bafa09c63a22f3672&w=1380");
+}
+
+
+/* ----------------------MENU SECTION----------------------------- */
+
+.menu-heading{
+  margin-top: 6.4rem;
+  text-align: center;       
+  color: #1d2024; 
+  font-size: 8.4rem;
+  font-weight: 500;
+  margin-bottom: 5.6rem;
+}
+
+.menu-position-types {
+  display: flex;
+  justify-content: center;  
+  margin-bottom: 20px;              
+  position: relative;
+  font-size: 2rem;
+  gap: 3rem;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom:0.2rem;
+  border-style: solid;
+  border-color:#77777757;
+  margin-bottom: 4rem;
+}
+.menu-position-types a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding-bottom: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Underline */
+.underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 50px;
+  background-color: gold;
+  transition: left 0.3s ease;
+}
+/* Menu items */
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.menu-item {
+  width: 34rem;
+  height: 34rem;
+  background-size: cover; 
+  background-position: center;
+  border-radius: 10px;
+}
+.item1 { background-image: url('https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/0A475B34-4E78-40D8-9F30-46223B7D77E7/Derivates/E55C7EA4-0E60-403F-B5DC-75EA358197BD.jpg'); }
+.item2 { background-image: url('https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/A0DD7160-958F-4204-8D53-EDD56F9AEAC7/Derivates/065FB89C-0E1C-4B4C-8E83-F9D20F49DD91.jpg'); }
+.item3 { background-image: url('https://www.bakingcapture.com/wp-content/uploads/2024/01/small-bithday-cake.jpg'); }
+/* Button */
+.btn-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.menu-button {
+  margin-top: 20px;
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 14px;
+  text-decoration: none;
+  background-color: #ffd369;
+  transition: background-color 0.3s;
+  border: none;
+  cursor: pointer;
 }
 
 /* --------------------------------------Footer---------------------------------- */

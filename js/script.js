@@ -77,3 +77,22 @@ function checkFlexGap() {
 }
 checkFlexGap();
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
+const underline = document.getElementById("underline");
+const links = document.querySelectorAll(".menu-position-types a");
+
+function moveUnderline(link) {
+    // Remove active class from all links
+    links.forEach(item => item.classList.remove("active"));
+    // Add active class to the clicked link
+    link.classList.add("active");
+    // Position the underline
+    underline.style.left = link.offsetLeft + "px";
+    underline.style.width = link.offsetWidth + "px";
+}
+
+// Initial position of the underline
+window.onload = () => {
+    const activeLink = document.querySelector(".menu-position-types a.active");
+    underline.style.left = activeLink.offsetLeft + "px";
+    underline.style.width = activeLink.offsetWidth + "px";
+};

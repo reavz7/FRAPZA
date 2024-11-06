@@ -61,7 +61,7 @@
               >Dowiedz się więcej &darr;</a
             >
           </div>
-          <div id="openHours">
+          <div id="openHours">  
             <div class="oh-content">
               <h1>Godziny otwarcia</h1>
               <table class="oh-table">
@@ -104,17 +104,55 @@
         </div>
       </section>
     </div>
-     <section class="section-menu">
-        <!-- TODO -->
-         <!-- TODO -->
-          <!-- TODO -->
-           <!-- TODO -->
-            <!-- TODO -->
-             <!-- TODO -->
-              <!-- TODO -->
-               <!-- TODO -->
-                
-     </section>
+    <section class="section-menu" id="menu-section">
+      <div class="menu container">
+          <h3 class="menu-heading">Menu</h3>
+          <div class="menu-position-types">
+              <a href="" class="active" onclick="moveUnderline(this)">Ciasta</a>
+              <a href="" onclick="moveUnderline(this)">Pizza</a>
+              <a href="" onclick="moveUnderline(this)">Dania główne</a>
+              <a href="" onclick="moveUnderline(this)">Śniadania</a>
+              <a href="" onclick="moveUnderline(this)">Napoje</a>
+              <a href="" onclick="moveUnderline(this)">Przystawki</a>
+              <div class="underline" id="underline"></div>
+          </div>
+          <div class="menu-items">
+              <div class="menu-item item1"></div> 
+              <div class="menu-item item2"></div> 
+              <div class="menu-item item3"></div> 
+          </div>
+          <div class="btn-menu">
+          <button class="menu-button">Zobacz pełne menu</button>
+          </div>  
+      </div>
+  </section>
+  <section class="section-opinions" id="opinions-section">
+    <div class="opinions container">
+      <h4 class="opinions-heading">Ostatnie opinie</h4>
+      <p class="opinions-description">Zapoznaj się z ostatnimi opiniami na nasz temat! :)</p> 
+      <div class="opinions-box">
+        <div class="opinion"> 
+          <p class="opinion-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde magni dolorum aliquam libero sapiente praesentium odio, 
+            vel veritatis quod necessitatibus qui corrupti quae rem repellendus neque, ad doloremque quos ipsum!</p>
+            <div class="opinion-info">
+              <img src="" alt="" class="profile-picture">
+              <p class="person-name">Jane Doe</p>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+        </div>
+        <div class="opinion">
+
+        </div>
+        <div class="opinion">
+
+        </div>
+      </div>
+    </div>
+  </section>
     </main>
 
     <footer class="footer">
@@ -152,43 +190,42 @@
         </div>
 
         <div class="address-col">
-          <p class="footer-heading">Contact us</p>
+          <p class="footer-heading">Kontakt</p>
           <address class="contacts">
-            <p class="address">Poland, Łódź, Kilińskiego 46 Street, 90-256</p>
+            <p class="address">Polska, Łódź, Kilińskiego 46 Street, 90-256</p>
             <p>
               <a class="footer-link" href="tel:123-123-123">+48 123-123-123</a
               ><br />
               <a class="footer-link" href="mailto:swiftdropsupport@gmail.com"
-                >swiftsupport@gmail.com</a
+                >frapza@gmail.com</a
               >
             </p>
           </address>
         </div>
         <nav class="nav-col">
-          <p class="footer-heading">Company</p>
+          <p class="footer-heading">Firma</p>
           <ul class="footer-nav">
-            <li><a class="footer-link" href="#">About SwiftDrop</a></li>
-            <li><a class="footer-link" href="#">For Business</a></li>
-            <li><a class="footer-link" href="#">Our partners</a></li>
-            <li><a class="footer-link" href="#">Careers</a></li>
+            <li><a class="footer-link" href="#">O nas</a></li>
+            <li><a class="footer-link" href="#">Praca</a></li>
+            <li><a class="footer-link" href="#">Nasi partnerzy</a></li>
+            <li><a class="footer-link" href="#">Kariery</a></li>
           </ul>
         </nav>
         <nav class="nav-col">
-          <p class="footer-heading">Account</p>
+          <p class="footer-heading">Konto</p>
           <ul class="footer-nav">
-            <li><a class="footer-link" href="#">Create account</a></li>
-            <li><a class="footer-link" href="#">Sign in</a></li>
-            <li><a class="footer-link" href="#">iOS app</a></li>
-            <li><a class="footer-link" href="#">Android app</a></li>
-            <li><a class="footer-link" href="#">Plans</a></li>
+            <li><a class="footer-link" href="#">Stwórz konto</a></li>
+            <li><a class="footer-link" href="#">Zaloguj się</a></li>
+            <li><a class="footer-link" href="#">iOS</a></li>
+            <li><a class="footer-link" href="#">Android</a></li>
           </ul>
         </nav>
 
         <nav class="nav-col">
-          <p class="footer-heading">Resources</p>
+          <p class="footer-heading">Zasoby</p>
           <ul class="footer-nav">
-            <li><a class="footer-link" href="#">Help center</a></li>
-            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+            <li><a class="footer-link" href="#">Pomoc</a></li>
+            <li><a class="footer-link" href="#">Prywatność i warunki</a></li>
           </ul>
         </nav>
       </div>
